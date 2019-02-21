@@ -260,7 +260,6 @@ h4 {
 p, form, label, input, li, ol {
     font-size: 1em; /* 22px @ 22 */
     line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */
-
     font-style: normal; 
     font-weight: normal;
 }
@@ -280,7 +279,12 @@ input {
 
 label[for=email] {
     display: inline-block;
+    padding-top: 0.809em;
     padding-bottom: 0.809em;
+}
+
+#input-email {
+    
 }
 
 label[for=age-verification] {
