@@ -322,10 +322,13 @@ label[for=age-verification] {
     width: auto;
     display: inline;
     padding: 0;
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-    margin-left: 0.6em;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.0em;
     margin-right: 0.6em;
+    width: 1.364em;
+    height: 1.664em;
 }
 
 /* submit css */
@@ -391,17 +394,18 @@ h1 {
         font-style: normal; 
         font-weight: normal;
     }
-    
+
     #age-verification {
-        width: auto;
         display: inline-block;
-        vertical-align:bottom;
-        margin-top: .618em;
-        margin-bottom: .618em;
-        margin-left: .618em;
-        margin-right: .618em;
+        vertical-align: middle;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0.0em;
+        margin-right: 0.6em;
+        width: 2.007em;
+        height: 2.007em;
     }
-    
+
 }
 /* 658px Break Point 2: Small Devices, Tablets, PCs */
 @media screen and (min-width: 658px) {
@@ -434,27 +438,29 @@ h1 {
     /* age verification css */
 
     #input-age-verification {
-        width: 100%;
+        width: 80%;
+        float: right;
         display: block;
         overflow: hidden; /* keeps it in box */
-        text-align: right;
-    }
-
-    label[for=age-verification] {
-        width: 75%;
-        display: inline-block;
-        padding: 0;
         text-align: left;
     }
 
-    #age-verification {
-        width: auto;
+    label[for=age-verification] {
         display: inline-block;
-        vertical-align:top;
-        margin-top: 0.6em;
-        margin-bottom: 0.6em;
-        margin-left: 0.6em;
+        text-align: left;
+        width: 86%
+
+    }
+
+    #age-verification {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0.0em;
         margin-right: 0.6em;
+        width: 1.364em;
+        height: 1.664em;
     }
 
     /* submit css */
