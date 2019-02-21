@@ -281,16 +281,16 @@ input {
 
 /* email css */
 
-label[for=email] {
-    padding-top: 0.809em;
-    padding-bottom: 0.809em;
-}
-
 #input-email {
     width: 100%;
     /* padding-top: 0.809em;  don't need because of label padding */
     padding-bottom: 0.809em;
     resize: vertical;
+}
+
+label[for=email] {
+    padding-top: 0.809em;
+    padding-bottom: 0.809em;
 }
 
 #email {
@@ -304,16 +304,16 @@ label[for=email] {
 
 /* age verification css */
 
-label[for=age-verification] {
-    width: 100%;
-    display: inline;
-    padding: none;
-}
-
 #input-age-verification {
     padding-top: 0.809em;
     padding-bottom: 0.809em;
     width: 100%;
+}
+
+label[for=age-verification] {
+    width: 100%;
+    display: inline;
+    padding: none;
 }
 
 #age-verification {
@@ -340,8 +340,6 @@ label[for=age-verification] {
     color: white;
 }
 
-
-
 h1 {
     text-align: center;
 }
@@ -353,66 +351,76 @@ h1 {
 /* 480px Break Point 1: Extra Small Devices, Phones */
 @media screen and (min-width: 806px) {
 
-    ol li {
-        display: block;
-        width: 100%;
-    }
-
     /* email css */
 
-    label[for=email] {
-
+    #input-email {
+        width: 100%;
+        padding-top: 0.809em;
+        padding-bottom: 0.809em;
+        display: block;
     }
 
-    #input-email {
-
+    label[for=email] {
+        padding-top: 0.809em;
+        padding-bottom: 0.809em;
+        width: 19%;
+        display: inline-block;
     }
 
     #email {
-
-    }
-
-
-    label[for=email] {
-
-    }
-
-    input{
         width: 80%;
-        float: right;
+        padding-top: 0.809em;
+        padding-bottom: 0.809em;
+        display: inline-block;
+
     }
 
     /* age verification css */
 
-    label[for=age-verification] {
+    #input-age-verification {
+        width: 100%;
         display: block;
-        text-align: right;  
+        overflow: hidden; /* keeps it in box */
+        text-align: right;
     }
 
-
-    #input-age-verification {
-        display: block;
+    label[for=age-verification] {
+        width: 75%;
+        display: inline-block;
+        padding: none;
+        text-align: left;
     }
 
     #age-verification {
-        margin: 11px 10px;
-        height: 
+        width: 5%;
+        display: inline-block;
+        vertical-align:top;
+        margin-top: 0.6em;
+         margin-bottom: 0.6em;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
     }
-    
-     /* submit css */
+
+    /* submit css */
 
     #input-submit {
-        padding-bottom: 1.618em;
+        width: 100%;
+        display: block;
+        overflow:hidden; /* keeps it in box */
     }
 
     #submit {
-        width: auto;
+        width: 80%;
+        float: right;
+        display: inline-block;
         border-radius: 0.236em;
         border-width: 0;
         border-style: hidden;
         background-color: darkgrey;
         color: white;
+        font-weight: 700;
     }
+
 
 }
 
