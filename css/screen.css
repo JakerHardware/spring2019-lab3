@@ -216,6 +216,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* ===== LAYOUT STYLES ====== */
+
 h1 a { 
     color: #747474; 
     font: bold 11px Calibri, Optima, Arial, sans-serif; 
@@ -343,7 +345,6 @@ label[for=age-verification] {
 h1 {
     text-align: center;
 }
-/* ===== LAYOUT STYLES ====== */
 
 /* ===== MODULAR STYLES ===== */
 /* === media queiries === */
@@ -435,11 +436,7 @@ h1 {
         margin:auto;
         text-align: center;
     }
-
-
-
-
-
+    
 }
 
 /* ===== STATE STYLES ======= */
