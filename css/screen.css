@@ -193,8 +193,8 @@ http://www.modularscale.com/?22&px&1.667&web&text
 
 html {
     font-size: 1.375em; /* 22px @ 16 */
-    line-height: 1.182em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
-    padding: 1.182em; /* 26px / ~ 120% */ 
+    line-height: 1.618em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    padding: 0.809em; /* 1.618% (1.618em / 2) */ 
     text-rendering: optimizeLegibility;
 }
 
@@ -230,8 +230,6 @@ h1 a {
 h1 {
     font-size: 2.25em; /* 49.5px @ 22 */
     line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */ 
-    padding-top:  0.534em; /* 11.748px ((2.25 - 1.182) / 2) */
-    padding-bottom:  0.534em; /* 11.748px ((2.25 - 1.182) / 2) */
     font-style: normal; 
     font-weight: normal;
 } 
@@ -239,8 +237,6 @@ h1 {
 h2 {
     font-size: 1.618em; /* 35.596px @ 22 */
     line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */ 
-    padding-top:  0.436em; /* 9.592px ((1.618 - 1.182) / 2) */
-    padding-bottom:  0.436em; /* 9.592px ((1.618 - 1.182) / 2) */
     font-style: normal; 
     font-weight: normal;
 } 
@@ -248,8 +244,7 @@ h2 {
 h3 {
     font-size: 1.391em; /* 30.593px @ 22 */
     line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */ 
-    padding-top:  0.209em; /* 4.598px ((1.391 - 1.182) / 2) */
-    padding-bottom:  0.209em; /* 4.598px ((1.391 - 1.182) / 2) */
+
     font-style: normal; 
     font-weight: normal;
 } 
@@ -257,8 +252,7 @@ h3 {
 h4 {
     font-size: 1em; /* 22px @ 22 */
     line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */
-    padding-top:  0.1em; /* 2.2px ((1.2 - 1) / 2) */
-    padding-bottom:  0.1em; /* 2.2px ((1.391 - 1.182) / 2) */
+
     font-style: normal; 
     font-weight: normal;
 }    
@@ -266,8 +260,7 @@ h4 {
 p, form, label, input, li, ol {
     font-size: 1em; /* 22px @ 22 */
     line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */
-    padding-top:  0.1em; /* 2.2px ((1.2 - 1) / 2) */
-    padding-bottom:  0.1em; /* 2.2px ((1.391 - 1.182) / 2) */
+
     font-style: normal; 
     font-weight: normal;
 }
@@ -275,8 +268,8 @@ p, form, label, input, li, ol {
 ol {
     background-color: lightgray;
     margin-top: 0.591em;
-    padding: 0.591em; /* 26px / ~ 120% */ 
-    border-radius: 0.328em;
+    padding: 0.809em; /* 26px / ~ 120% */ 
+    border-radius: 0.236em;
 }
 
 input {
@@ -287,20 +280,7 @@ input {
 
 label[for=email] {
     display: inline-block;
-    padding-top: 0.591em;
-    padding-bottom: 0.591em;
-}
-
-#input-age-verification {
-
-    padding-top: 0.591em;
-    padding-bottom: 0.591em;
-}
-
-#age-verification {
-    width: auto;
-    display: inline;
-    padding: none;
+    padding-bottom: 0.809em;
 }
 
 label[for=age-verification] {
@@ -309,9 +289,36 @@ label[for=age-verification] {
     padding: none;
 }
 
+#input-age-verification {
+    padding-top: 0.809em;
+    padding-bottom: 0.809em;
+}
+
+#age-verification {
+    width: auto;
+    display: inline;
+    padding: none;
+}
+
+
+
 #input-submit {
-    padding-top: 0.591em;
-    padding-bottom: 0.591em;
+    padding-top: 0.809em;
+    padding-bottom: 0.809em;
+}
+
+#submit {
+    border-radius: 0.236em;
+    border-bottom-width: 0;
+    border-style: hidden;
+    background-color: darkgrey;
+    color: white;
+}
+
+#email {
+    border-radius: 0.236em;
+    border-style: hidden;
+
 }
 
 /* ===== LAYOUT STYLES ====== */
