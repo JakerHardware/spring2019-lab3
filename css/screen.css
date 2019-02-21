@@ -272,7 +272,40 @@ p, form, label, input, li, ol {
     font-weight: normal;
 }
 
+ol {
+    background-color: lightgray;
+    margin-top: 0.591em;
+    padding: 0.591em; /* 26px / ~ 120% */ 
+    border-radius: 0.328em;
+}
 
+input {
+    width: 100%;
+    resize: vertical;
+    display: inline-block;
+}
+
+label[for=email] {
+    display: inline-block;
+}
+
+#input-age-verification {
+    display: inline-block;
+    padding-top: 0.591em;
+    padding-bottom: 0.591em;
+}
+
+#age-verification {
+    width: auto;
+    display: inline;
+    padding: none;
+}
+
+label[for=age-verification] {
+    width: auto;
+    display: inline;
+    padding: none;
+}
 
 /* ===== LAYOUT STYLES ====== */
 
