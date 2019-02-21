@@ -224,6 +224,7 @@ h1 a {
     text-decoration: none; 
 }
 
+/* heading and paragraph css */
 /* (36 / 16 = 2.25) */
 /* (2.25 * 22px = 49.5) */
 
@@ -257,7 +258,7 @@ h4 {
     font-weight: normal;
 }    
 
-p, form, label, input, li, ol {
+p {
     font-size: 1em; /* 22px @ 22 */
     line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */
     font-style: normal; 
@@ -272,36 +273,39 @@ ol {
 }
 
 input {
-    width: 100%;
     resize: vertical;
     display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* email css */
 
 label[for=email] {
-    display: inline-block;
-    padding-top: 0.382em;
-    padding-bottom: 0.382em;
-}
-
-#input-email {
     padding-top: 0.809em;
     padding-bottom: 0.809em;
 }
 
+#input-email {
+    width: 100%;
+    /* padding-top: 0.809em;  don't need because of label padding */
+    padding-bottom: 0.809em;
+    resize: vertical;
+}
+
 #email {
+    width: 100%;
     border-radius: 0.236em;
     border-style: hidden;
-    padding-top: 0.382em;
-    padding-bottom: 0.382em;
+    padding-top: 0.809em;
+    padding-bottom: 0.809em;
 
 }
 
 /* age verification css */
 
 label[for=age-verification] {
-    width: auto;
+    width: 100%;
     display: inline;
     padding: none;
 }
@@ -309,6 +313,7 @@ label[for=age-verification] {
 #input-age-verification {
     padding-top: 0.809em;
     padding-bottom: 0.809em;
+    width: 100%;
 }
 
 #age-verification {
@@ -317,16 +322,19 @@ label[for=age-verification] {
     padding: none;
 }
 
-
+/* submit css */
 
 #input-submit {
+    width: 100%;
     padding-top: 0.809em;
     padding-bottom: 0.809em;
 }
 
 #submit {
+    width: 100%;
+    padding-top: 0.809em;
+    padding-bottom: 0.809em;
     border-radius: 0.236em;
-    border-width: 0;
     border-style: hidden;
     background-color: darkgrey;
     color: white;
@@ -349,15 +357,51 @@ h1 {
         display: block;
         width: 100%;
     }
+
+    /* email css */
+
     label[for=email] {
-        
+
     }
-    
+
+    #input-email {
+
+    }
+
+    #email {
+
+    }
+
+
+    label[for=email] {
+
+    }
+
     input{
         width: 80%;
         float: right;
     }
-    #input-submit{
+
+    /* age verification css */
+
+    label[for=age-verification] {
+        display: block;
+        text-align: right;  
+    }
+
+
+    #input-age-verification {
+        display: block;
+    }
+
+    #age-verification {
+        margin: 11px 10px;
+        height: 
+    }
+    
+     /* submit css */
+
+    #input-submit {
         padding-bottom: 1.618em;
     }
 
@@ -368,21 +412,6 @@ h1 {
         border-style: hidden;
         background-color: darkgrey;
         color: white;
-        
-    }
-
-    #input-age-verification {
-        display: block;
-    }
-
-    #age-verification {
-        margin: 11px 10px;
-        height: 
-    }
-
-    label[for=age-verification] {
-        display: block;
-        text-align: right;  
     }
 
 }
@@ -404,7 +433,7 @@ h1 {
     label[for=email] {
         padding-bottom: 0.809em;
     }
-    
+
     input{
         width: 80%;
         float: right;
@@ -420,7 +449,7 @@ h1 {
         border-style: hidden;
         background-color: darkgrey;
         color: white;
-        
+
     }
 
     #input-age-verification {
@@ -436,8 +465,8 @@ h1 {
         display: block;
         text-align: right;  
     }
-    
-    
+
+
 
 }
 
