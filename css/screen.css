@@ -192,10 +192,9 @@ http://www.modularscale.com/?22&px&1.667&web&text
 */
 
 html {
-    font-size: 1.375em;
     font-size: 1.375em; /* 22px @ 16 */
     line-height: 1.182em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
-    padding: 1.182em; /* 26px / ~ 120% */
+    padding: 1.182em; /* 26px / ~ 120% */ 
     text-rendering: optimizeLegibility;
 }
 
@@ -217,13 +216,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 { 
-    font-size: 2.292em;  /* 37px */
-    line-height: 1.182em; /* 26px / ~ 120% */
-    padding-top:  1.189em; /* 37px */
-    padding-bottom: /* 148px / 4 gridlines */
-}
-
 h1 a { 
     color: #747474; 
     font: bold 11px Calibri, Optima, Arial, sans-serif; 
@@ -231,14 +223,56 @@ h1 a {
     text-transform: uppercase; 
     text-decoration: none; 
 }
+
 /* (36 / 16 = 2.25) */
 /* (2.25 * 22px = 49.5) */
-h1 {font-size: 2.25em;} /* 49.5px @ 22 */
-h2 {font-size: 1.618em;} /* 35.596px @ 22 */
-h3 {font-size: 1.391em;} /* 30.593px @ 22 */
-h4 {font-size: 1em;}     /* 22px @ 22 */
-h5 {font-size: 0.859em;} /* 18.908px @ 22 */
-h6 {font-size: 0.618em;} /* 13.597px @ 22 */
+
+h1 {
+    font-size: 2.25em; /* 49.5px @ 22 */
+    line-height: 1.182em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    padding-top:  0.534em; /* 11.748px ((2.25 - 1.182) / 2) */
+    padding-bottom:  0.534em; /* 11.748px ((2.25 - 1.182) / 2) */
+    font-style: normal; 
+    font-weight: normal;
+} 
+
+h2 {
+    font-size: 1.618em; /* 35.596px @ 22 */
+    line-height: 1.182em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    padding-top:  0.436em; /* 9.592px ((1.618 - 1.182) / 2) */
+    padding-bottom:  0.436em; /* 9.592px ((1.618 - 1.182) / 2) */
+    font-style: normal; 
+    font-weight: normal;
+} 
+
+h3 {
+    font-size: 1.391em; /* 30.593px @ 22 */
+    line-height: 1.182em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    padding-top:  0.209em; /* 4.598px ((1.391 - 1.182) / 2) */
+    padding-bottom:  0.209em; /* 4.598px ((1.391 - 1.182) / 2) */
+    font-style: normal; 
+    font-weight: normal;
+} 
+
+h4 {
+    font-size: 1em; /* 22px @ 22 */
+    line-height: 1.2em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    padding-top:  0.1em; /* 2.2px ((1.2 - 1) / 2) */
+    padding-bottom:  0.1em; /* 2.2px ((1.391 - 1.182) / 2) */
+    font-style: bold; 
+    font-weight: normal;
+}    
+
+p, form {
+    font-size: 1em; /* 22px @ 22 */
+    line-height: 1.2em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    padding-top:  0.1em; /* 2.2px ((1.2 - 1) / 2) */
+    padding-bottom:  0.1em; /* 2.2px ((1.391 - 1.182) / 2) */
+    font-style: normal; 
+    font-weight: normal;
+}
+
+
 
 /* ===== LAYOUT STYLES ====== */
 
