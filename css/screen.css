@@ -315,13 +315,13 @@ label[for=email] {
 label[for=age-verification] {
     width: 100%;
     display: inline;
-    padding: none;
+    padding: 0;
 }
 
 #age-verification {
     width: auto;
     display: inline;
-    padding: none;
+    padding: 0;
 }
 
 /* submit css */
@@ -389,7 +389,7 @@ h1 {
     label[for=age-verification] {
         width: 75%;
         display: inline-block;
-        padding: none;
+        padding: 0;
         text-align: left;
     }
 
@@ -432,7 +432,6 @@ h1 {
     main {
         width: 960px;
         display: block;
-        padding:auto;
         margin:auto;
         text-align: center;
     }
