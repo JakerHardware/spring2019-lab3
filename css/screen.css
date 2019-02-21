@@ -365,6 +365,7 @@ h1 {
         padding-bottom: 0.809em;
         width: 19%;
         display: inline-block;
+        text-align: center;
     }
 
     #email {
@@ -392,13 +393,13 @@ h1 {
     }
 
     #age-verification {
-        width: 5%;
+        width: auto;
         display: inline-block;
         vertical-align:top;
         margin-top: 0.6em;
-         margin-bottom: 0.6em;
-        margin-left: 0.3em;
-        margin-right: 0.3em;
+        margin-bottom: 0.6em;
+        margin-left: 0.6em;
+        margin-right: 0.6em;
     }
 
     /* submit css */
@@ -432,47 +433,10 @@ h1 {
         display: block;
         padding:auto;
         margin:auto;
-        text-align:centre;
-    }
-    ol li {
-        display: block;
-        width: 100%;
-    }
-    label[for=email] {
-        padding-bottom: 0.809em;
+        text-align: center;
     }
 
-    input{
-        width: 80%;
-        float: right;
-    }
-    #input-submit{
-        padding-bottom: 1.618em;
-    }
 
-    #submit {
-        width: auto;
-        border-radius: 0.236em;
-        border-width: 0;
-        border-style: hidden;
-        background-color: darkgrey;
-        color: white;
-
-    }
-
-    #input-age-verification {
-        display: block;
-    }
-
-    #age-verification {
-        margin: 11px 10px;
-        height: 
-    }
-
-    label[for=age-verification] {
-        display: block;
-        text-align: right;  
-    }
 
 
 
