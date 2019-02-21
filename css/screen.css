@@ -322,6 +322,10 @@ label[for=age-verification] {
     width: auto;
     display: inline;
     padding: 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
 }
 
 /* submit css */
@@ -348,9 +352,59 @@ h1 {
 
 /* ===== MODULAR STYLES ===== */
 /* === media queiries === */
+/* 400px Break Point 1: Extra Small Devices, Phones */
+@media screen and (max-width: 354px) { 
 
-/* 480px Break Point 1: Extra Small Devices, Phones */
-@media screen and (min-width: 806px) {
+    h1 {
+        font-size: 1.618em; /* 35.596px @ 22 */
+        line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */ 
+        font-style: normal; 
+        font-weight: normal;
+    } 
+
+    h2 {
+        font-size: 1.391em; /* 30.593px @ 22 */
+        line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */ 
+
+        font-style: normal; 
+        font-weight: normal;
+    } 
+
+    h3 {
+        font-size: 1em; /* 22px @ 22 */
+        line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */
+
+        font-style: normal; 
+        font-weight: normal;
+    }    
+
+    h4 {
+        font-size: 1em; /* 22px @ 22 */
+        line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */
+        font-style: normal; 
+        font-weight: normal;
+    }
+
+    p, label, input {
+        font-size: 0.618em; /* 13px @ 22 */
+        line-height: 1.618em; /* 22px / ~ 1.618% */ /* ( 22px / 22px = 1em ) */
+        font-style: normal; 
+        font-weight: normal;
+    }
+    
+    #age-verification {
+        width: auto;
+        display: inline-block;
+        vertical-align:bottom;
+        margin-top: .618em;
+        margin-bottom: .618em;
+        margin-left: .618em;
+        margin-right: .618em;
+    }
+    
+}
+/* 658px Break Point 2: Small Devices, Tablets, PCs */
+@media screen and (min-width: 658px) {
 
     /* email css */
 
@@ -426,8 +480,8 @@ h1 {
 
 }
 
-/* 992px Break Point 2: Desktop Computers, Large screens */
-@media screen and (min-width: 960px) {
+/* 992px Break Point 3: Desktop Computers, Large screens */
+@media screen and (min-width: 996px) {
 
     main {
         width: 960px;
@@ -435,7 +489,7 @@ h1 {
         margin:auto;
         text-align: center;
     }
-    
+
 }
 
 /* ===== STATE STYLES ======= */
