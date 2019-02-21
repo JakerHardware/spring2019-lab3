@@ -204,6 +204,17 @@ label {
 
 /* ===== ALL WORK BELOW HERE ===== */
 
+/* == 2. set up the `font-family` with a robust font stack (3 fonts deep) == */
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%; 
+  line-height: 1.15; 
+  margin: 0;
+}
+
 /* ===== LAYOUT STYLES ====== */
 
 /* ===== MODULAR STYLES ===== */
