@@ -259,11 +259,11 @@ h4 {
     line-height: 1.2em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
     padding-top:  0.1em; /* 2.2px ((1.2 - 1) / 2) */
     padding-bottom:  0.1em; /* 2.2px ((1.391 - 1.182) / 2) */
-    font-style: bold; 
+    font-style: normal; 
     font-weight: normal;
 }    
 
-p, form {
+p, form, label, input, li, ol {
     font-size: 1em; /* 22px @ 22 */
     line-height: 1.2em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
     padding-top:  0.1em; /* 2.2px ((1.2 - 1) / 2) */
