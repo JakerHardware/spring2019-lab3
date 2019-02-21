@@ -277,15 +277,28 @@ input {
     display: inline-block;
 }
 
+/* email css */
+
 label[for=email] {
     display: inline-block;
+    padding-top: 0.382em;
+    padding-bottom: 0.382em;
+}
+
+#input-email {
     padding-top: 0.809em;
     padding-bottom: 0.809em;
 }
 
-#input-email {
-    
+#email {
+    border-radius: 0.236em;
+    border-style: hidden;
+    padding-top: 0.382em;
+    padding-bottom: 0.382em;
+
 }
+
+/* age verification css */
 
 label[for=age-verification] {
     width: auto;
@@ -319,11 +332,7 @@ label[for=age-verification] {
     color: white;
 }
 
-#email {
-    border-radius: 0.236em;
-    border-style: hidden;
 
-}
 
 h1 {
     text-align: center;
@@ -341,7 +350,7 @@ h1 {
         width: 100%;
     }
     label[for=email] {
-        padding-bottom: 0.809em;
+        
     }
     
     input{
