@@ -309,7 +309,7 @@ label[for=age-verification] {
 
 #submit {
     border-radius: 0.236em;
-    border-bottom-width: 0;
+    border-width: 0;
     border-style: hidden;
     background-color: darkgrey;
     color: white;
@@ -321,10 +321,112 @@ label[for=age-verification] {
 
 }
 
+h1 {
+    text-align: center;
+}
 /* ===== LAYOUT STYLES ====== */
 
 /* ===== MODULAR STYLES ===== */
 /* === media queiries === */
+
+/* 480px Break Point 1: Extra Small Devices, Phones */
+@media screen and (min-width: 806px) {
+
+    ol li {
+        display: block;
+        width: 100%;
+    }
+    label[for=email] {
+        padding-bottom: 0.809em;
+    }
+    
+    input{
+        width: 80%;
+        float: right;
+    }
+    #input-submit{
+        padding-bottom: 1.618em;
+    }
+
+    #submit {
+        width: auto;
+        border-radius: 0.236em;
+        border-width: 0;
+        border-style: hidden;
+        background-color: darkgrey;
+        color: white;
+        
+    }
+
+    #input-age-verification {
+        display: block;
+    }
+
+    #age-verification {
+        margin: 11px 10px;
+        height: 
+    }
+
+    label[for=age-verification] {
+        display: block;
+        text-align: right;  
+    }
+
+}
+
+/* 992px Break Point 2: Desktop Computers, Large screens */
+@media screen and (min-width: 1000px) {
+
+    main {
+        width: 960px;
+        display: block;
+        padding:auto;
+        margin:auto;
+        text-align:centre;
+    }
+    ol li {
+        display: block;
+        width: 100%;
+    }
+    label[for=email] {
+        padding-bottom: 0.809em;
+    }
+    
+    input{
+        width: 80%;
+        float: right;
+    }
+    #input-submit{
+        padding-bottom: 1.618em;
+    }
+
+    #submit {
+        width: auto;
+        border-radius: 0.236em;
+        border-width: 0;
+        border-style: hidden;
+        background-color: darkgrey;
+        color: white;
+        
+    }
+
+    #input-age-verification {
+        display: block;
+    }
+
+    #age-verification {
+        margin: 11px 10px;
+        height: 
+    }
+
+    label[for=age-verification] {
+        display: block;
+        text-align: right;  
+    }
+    
+    
+
+}
 
 /* ===== STATE STYLES ======= */
 /* === javascript === */
