@@ -427,7 +427,7 @@ h1 {
 }
 
 /* 992px Break Point 2: Desktop Computers, Large screens */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 960px) {
 
     main {
         width: 960px;
