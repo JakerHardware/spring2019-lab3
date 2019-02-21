@@ -229,7 +229,7 @@ h1 a {
 
 h1 {
     font-size: 2.25em; /* 49.5px @ 22 */
-    line-height: 1.182em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */ 
     padding-top:  0.534em; /* 11.748px ((2.25 - 1.182) / 2) */
     padding-bottom:  0.534em; /* 11.748px ((2.25 - 1.182) / 2) */
     font-style: normal; 
@@ -238,7 +238,7 @@ h1 {
 
 h2 {
     font-size: 1.618em; /* 35.596px @ 22 */
-    line-height: 1.182em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */ 
     padding-top:  0.436em; /* 9.592px ((1.618 - 1.182) / 2) */
     padding-bottom:  0.436em; /* 9.592px ((1.618 - 1.182) / 2) */
     font-style: normal; 
@@ -247,7 +247,7 @@ h2 {
 
 h3 {
     font-size: 1.391em; /* 30.593px @ 22 */
-    line-height: 1.182em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */ 
     padding-top:  0.209em; /* 4.598px ((1.391 - 1.182) / 2) */
     padding-bottom:  0.209em; /* 4.598px ((1.391 - 1.182) / 2) */
     font-style: normal; 
@@ -256,7 +256,7 @@ h3 {
 
 h4 {
     font-size: 1em; /* 22px @ 22 */
-    line-height: 1.2em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */
     padding-top:  0.1em; /* 2.2px ((1.2 - 1) / 2) */
     padding-bottom:  0.1em; /* 2.2px ((1.391 - 1.182) / 2) */
     font-style: normal; 
@@ -265,7 +265,7 @@ h4 {
 
 p, form, label, input, li, ol {
     font-size: 1em; /* 22px @ 22 */
-    line-height: 1.2em; /* 26px / ~ 120% */ /* ( 26px / 22px = 1.182em ) */ 
+    line-height: 1.618em; /* 26px / ~ 1.618% */ /* ( 26px / 22px = 1.182em ) */
     padding-top:  0.1em; /* 2.2px ((1.2 - 1) / 2) */
     padding-bottom:  0.1em; /* 2.2px ((1.391 - 1.182) / 2) */
     font-style: normal; 
@@ -287,10 +287,12 @@ input {
 
 label[for=email] {
     display: inline-block;
+    padding-top: 0.591em;
+    padding-bottom: 0.591em;
 }
 
 #input-age-verification {
-    display: inline-block;
+
     padding-top: 0.591em;
     padding-bottom: 0.591em;
 }
@@ -305,6 +307,11 @@ label[for=age-verification] {
     width: auto;
     display: inline;
     padding: none;
+}
+
+#input-submit {
+    padding-top: 0.591em;
+    padding-bottom: 0.591em;
 }
 
 /* ===== LAYOUT STYLES ====== */
