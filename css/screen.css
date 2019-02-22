@@ -345,7 +345,7 @@ label[for=age-verification] {
     padding-bottom: 0.809em;
     border-radius: 0.236em;
     border-style: hidden;
-    background-color: darkgrey;
+    background-color: grey;
     color: white;
 }
 
@@ -478,7 +478,7 @@ h1 {
         border-radius: 0.236em;
         border-width: 0;
         border-style: hidden;
-        background-color: darkgrey;
+        background-color: grey;
         color: white;
         font-weight: 700;
     }
@@ -500,3 +500,11 @@ h1 {
 
 /* ===== STATE STYLES ======= */
 /* === javascript === */
+
+#submit:not(.active):hover{ /* before submit */
+    background-color: dimgrey;
+}
+
+#submit.active:hover { /* after submit (greyed out */
+    /* does not change color */
+}
