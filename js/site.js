@@ -7,6 +7,13 @@ jQuery(function($) {
 // functions
 function checksubmit(){
     alert('hi');
+    
+    // disable submit button;
+    var submitbutton = document.getElementById("submit");
+    submitbutton.style.opacity = 0.2;
+    submitbutton.style.backgroundColor = lightgrey;
+    
+    return false;
 };
 
 /***
