@@ -5,11 +5,6 @@ jQuery(function($) {
 });
 
 // functions
-function myEventFunction(){
-    var submitbutton = document.getElementById("submit");
-    submitbutton.style.opacity = 1;
-    submitbutton.style.backgroundColor = red;
-}
 
 function myEventFunction(){
     // local variables
@@ -18,9 +13,10 @@ function myEventFunction(){
     var emailbox = document.getElementById("email");
     var text = "Congratulations, You are now signed up for our Newsletter.";
 
-    if(this.checked == true){
-        prompt('hi faggot');
+    if(this.checked == true){;
     }
+    
+    alert('hi loser');
 
     /***
     // checks if true
@@ -48,5 +44,3 @@ function myEventFunction(){
 
 var f1 = document.getElementById('submit'); //create variable
 f1.addEventListener('click', myEventFunction); //run method
-
-);
