@@ -5,6 +5,11 @@ jQuery(function($) {
 });
 
 // functions
+function myEventFunction(){
+    var submitbutton = document.getElementById("submit");
+    submitbutton.style.opacity = 1;
+    submitbutton.style.backgroundColor = red;
+}
 
 function myEventFunction(){
     // local variables
@@ -13,6 +18,11 @@ function myEventFunction(){
     var emailbox = document.getElementById("email");
     var text = "Congratulations, You are now signed up for our Newsletter.";
 
+    if(this.checked == true){
+        prompt('hi faggot');
+    }
+
+    /***
     // checks if true
     if((agecheck.checked == true) && (emailbox.checkValidation() == true)){
 
@@ -24,18 +34,17 @@ function myEventFunction(){
         submitbutton.style.backgroundColor = lightgrey;
 
         // disables hover
-        submitbutton.classList.remove(".notsubmitted");
+        submitbutton.");
         submitbutton.classList.add('.submitted');
     } else{
+        alert('Not Submitted');
         submitbutton.classList.add(".notsubmitted");
         submitbutton.classList.remove(".submitted");
     }
-
+    */
 }
 
 // main
-
-document.getElementById("submit").classList.add("#submit.notsubmitted");
 
 var f1 = document.getElementById('submit'); //create variable
 f1.addEventListener('click', myEventFunction); //run method
