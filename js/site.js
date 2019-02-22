@@ -2,16 +2,9 @@
 jQuery(function($) {
     $('html').removeClass('nojs');
     $('html').addClass('hasjs');
-    $('#submit').on('click', function() { // when you click the div
-        $(this).addClass('active'); // add the class 'no-hover'
-    });
 });
 
 // functions
-
-function myEventFucntion2(){
-
-}
 
 function myEventFunction(){
     // local variables
@@ -19,31 +12,32 @@ function myEventFunction(){
     var submitbutton = document.getElementById("submit");
     var emailbox = document.getElementById("email");
     var text = "Congratulations, You are now signed up for our Newsletter.";
-    var isValidEmail = emailbox.checkValidity();
 
     // checks if true
-    if((agecheck.checked == true) && (isValidEmail)){
-        
+    if((agecheck.checked == true) && (emailbox.checkValidation() == true)){
+
         // prompt user
         alert('Submission Confirmed: '+ text);
 
         // disable submit button;
-        submitbutton.style.opacity = .2;
+        submitbutton.style.opacity = 0.2;
         submitbutton.style.backgroundColor = lightgrey;
-        
+
         // disables hover
-        //submitbutton.addClass('active');
-    } else if (isValidEmail == false){
-        alert('Please enter a valid email address.');
-    }
-    else{
-        alert('Please confirm if you are 18 years old or older.');
+        submitbutton.classList.remove(".notsubmitted");
+        submitbutton.classList.add('.submitted');
+    } else{
+        submitbutton.classList.add(".notsubmitted");
+        submitbutton.classList.remove(".submitted");
     }
 
 }
 
 // main
 
+document.getElementById("submit").classList.add("#submit.notsubmitted");
+
 var f1 = document.getElementById('submit'); //create variable
 f1.addEventListener('click', myEventFunction); //run method
 
+);

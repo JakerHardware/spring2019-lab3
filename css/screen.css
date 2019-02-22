@@ -501,10 +501,14 @@ h1 {
 /* ===== STATE STYLES ======= */
 /* === javascript === */
 
-#submit:not(.active):hover{ /* before submit */
+.notsubmitted{ /* before submit */
     background-color: dimgrey;
 }
 
-#submit.active:hover { /* after submit (greyed out */
+#submit.notsubmitted{ /* before submit */
+    background-color: dimgrey;
+}
+
+.submitted { /* after submit (greyed out */
     /* does not change color */
 }
